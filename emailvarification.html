@@ -1,0 +1,29 @@
+<html>
+<head>	
+</head>
+<body>
+<h2>login</h2>
+<p>enter the values</p>
+Email ID : <input type="text" id="id" placeholder="Enter Email ID " autofocus><br>
+password : <input type="password" id="psw" placeholder="enter password"><br>
+<button type="button" onclick="check()">submit</button> 
+</body>
+<script>
+	function check()
+	{
+		var a=document.getElementById('id');
+	 	var b=document.getElementById('psw');
+		var pattern=/^(\w+)@(\w+)\.(\w{2,3}$)/;
+		if(!pattern.test(a.value))
+		{
+			alert("please enter valid mail ");
+			return false;
+		}
+		else
+		{
+			alert("login success[pattern matched]");		 
+			return true;
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Aadhaar Card Verification : </title>
+	<h3>verification</h3>
+</head>
+<body>
+		please enter your 12 digits aadhaar number:<br>
+		Enter the number : <input type="text" id="num1"><br>
+		<button type="button" onclick="numberverify()">submit</button>
+</body>
+<script>
+	function numberverify() {
+		var number=document.getElementById('num1');
+		var pattern=/^([(\d)+]{4})-([\d+]{4})-([\d+]{4})$/;
+		if(!pattern.test(number.value))
+		{
+			alert("please enter number");
+		}
+		else
+		{
+			alert("aadhaar card number verified");
+		}
+		// body...
+	}
+</script>
+</html>
