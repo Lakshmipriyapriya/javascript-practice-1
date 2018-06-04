@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> exception handling</title>
+</head>
+<body>
+<p id="first"></p>
+</body>
+<script>
+	try
+	{
+		alert("ReferenceError ");
+		addlert("try block");
+		//alert("TypeError");
+		//window.write("another error"); //if u remove that addlert then it will display
+	}
+	catch(err)
+	{
+		document.getElementById('first').innerHTML=err.name + " <br> " +err.message;
+	}
+</script>
+</html>

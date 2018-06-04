@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>regular expressions:</title>
+</head>
+<body>
+<p id="1">click to get tutorial element position from this line "Use w3school tutorial to learn js" : </p>
+<button type="button" onclick="regular()">submit</button>
+</body>
+<script>
+	function regular()
+	{
+		var a="Use w3school tutorial to learn js";
+		var pattern=a.search(/TUTORIAL/i);
+		document.getElementById('1').innerHTML=pattern;
+	}
+</script>
+</html>

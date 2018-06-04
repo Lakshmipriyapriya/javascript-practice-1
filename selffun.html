@@ -1,0 +1,21 @@
+<html>
+<head>
+<h3>self executing function</h3>
+</head>
+<body>
+	<p>function is used to simplyfy the code and reduce the number of lines in code.<br>
+	self function is not required calling, it is automatically run and return value to the variables.<br></p>
+	<button type="button" onclick="onemorefun()">enter</button>
+</body>
+<script>
+	function onemorefun()
+	{
+		alert("function started");
+		(function(){
+			var a=10;
+			var b=5;
+			alert(a*b);
+		})();
+	}
+</script>
+</html>
