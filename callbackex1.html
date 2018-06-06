@@ -1,0 +1,23 @@
+<html>
+<title>callback function</title>
+<body>
+	<p id=1> </p>
+</body>
+<script>
+	function one(p1,p2,p3)
+	{
+		document.getElementById('1').innerHTML="this is onefun";
+		alert(p1 +","+ p2+ " "+ p3);
+	}
+	function callbackfun(callback)
+	{
+		document.getElementById('1').innerHTML="this is callback";
+		var another="this another parameter";
+		callback(another);
+	}
+	callbackfun(function(x){
+		document.getElementById('1').innerHTML="this is callbackfun()";
+		one("hi","gdmrg",'bava',x);
+	});
+</script>
+</html>
